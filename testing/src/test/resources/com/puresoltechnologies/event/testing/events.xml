@@ -1,0 +1,13 @@
+<events>
+	<shortcut>ET</shortcut>
+	<event>
+		<code>100</code>
+		<message>Sample exception for testing.</message>
+		<ocap>Nothing to be done, as it is testing only.</ocap>
+	</event>
+	<event>
+		<code>200</code>
+		<message>Something happend... ;-)</message>
+		<ocap></ocap>
+	</event>
+</events>

@@ -1,0 +1,14 @@
+target/
+pom.xml.versionsBackup
+release.properties
+.metadata
+.settings
+.classpath
+.project
+*.log
+*.log.*
+*.lock
+*~
+dependency-reduced-pom.xml
+Thumbs.db
+META-INF/
