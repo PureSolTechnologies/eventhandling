@@ -1,14 +1,15 @@
 target/
+pom.xml.tag
+pom.xml.releaseBackup
 pom.xml.versionsBackup
+pom.xml.next
 release.properties
-.metadata
-.settings
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
 .classpath
 .project
-*.log
-*.log.*
-*.lock
-*~
-dependency-reduced-pom.xml
-Thumbs.db
-META-INF/
+.settings/
+
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
