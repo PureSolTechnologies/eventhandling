@@ -7,9 +7,21 @@ package com.puresoltechnologies.events.domain;
  */
 public enum EventSeverity {
 
+    /**
+     * Indicates an info event.
+     */
     INFO("This event is used to log state changes of the system and to provide information about the usage of the system for failure analysis and as context for the other event severities."), //
+    /**
+     * Indicates an warning event.
+     */
     WARNING("This event indicates an issue of a part of a guaranteed functionality, but the overall consistency of the system is assured."), //
+    /**
+     * Indicates an error event.
+     */
     ERROR("This event indicates an issue of a guaranteed functionality which is aborted. A major functionality is not available and the overall consistency of the system cannot be assured."), //
+    /**
+     * Indicates an fatal event.
+     */
     FATAL("This event is used to indicate a fatal issue, what causes the system/ programm to stop working. It is used to log the final conditions and information before the service or programm is shut down for failure analysis."), //
     ;
 

@@ -10,13 +10,29 @@ package com.puresoltechnologies.events.domain;
  */
 public interface EventException extends Event {
 
-    @Override
-    String getEventCode();
-
+    /**
+     * This method returns the message of the exception obtained by
+     * {@link Exception#getMessage()}.
+     *
+     * @return A {@link String} with the message is returned.
+     */
     String getMessage();
 
+    /**
+     * This method returns the cause of the exception obtained by
+     * {@link Exception#getCause()}.
+     *
+     * @return A {@link Throwable} with the cause exception is returned.
+     */
     Throwable getCause();
 
+    /**
+     * This method returns the stack trace of the exception obtained by
+     * {@link Exception#getStackTrace()}.
+     *
+     * @return An array of {@link StackTraceElement} with the stack trace is
+     *         returned.
+     */
     StackTraceElement[] getStackTrace();
 
 }

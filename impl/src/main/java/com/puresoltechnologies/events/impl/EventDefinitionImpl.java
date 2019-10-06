@@ -10,6 +10,11 @@ import com.puresoltechnologies.events.domain.Action;
 import com.puresoltechnologies.events.domain.EventDefinition;
 import com.puresoltechnologies.events.domain.EventSeverity;
 
+/**
+ * This is an implementation of {@link EventDefinition}.
+ *
+ * @author Rick-Rainer Ludwig
+ */
 public class EventDefinitionImpl implements EventDefinition {
 
     private final String componentShortcut;

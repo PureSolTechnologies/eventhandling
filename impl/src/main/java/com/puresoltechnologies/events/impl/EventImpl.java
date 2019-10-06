@@ -7,6 +7,11 @@ import com.puresoltechnologies.events.domain.Action;
 import com.puresoltechnologies.events.domain.Event;
 import com.puresoltechnologies.events.domain.EventSeverity;
 
+/**
+ * This is an implementation of {@link Event}.
+ *
+ * @author Rick-Rainer Ludwig
+ */
 public class EventImpl extends EventDefinitionImpl implements Event {
 
     private final Instant time;

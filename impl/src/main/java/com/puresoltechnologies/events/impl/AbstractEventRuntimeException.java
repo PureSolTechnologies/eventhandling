@@ -68,6 +68,11 @@ public abstract class AbstractEventRuntimeException extends RuntimeException imp
 	this.event = event;
     }
 
+    /**
+     * This method returns the associated event.
+     *
+     * @return An {@link Event} is returned.
+     */
     public final Event getEvent() {
 	return event;
     }

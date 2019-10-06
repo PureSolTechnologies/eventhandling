@@ -34,17 +34,38 @@ public interface EventDefinition {
     int getNumber();
 
     /**
+     * This method returns the event code. The event code shall be unique for the
+     * whole system to avoid confusion. It shall be used as id to identify the event
+     * type and the related information.
      *
-     * @return
+     * @return A {@link String} with the event code is returned.
      */
     default String getEventCode() {
 	return getComponentShortcut() + "-" + getNumber();
     }
 
+    /**
+     * This method returns the severity of the event.
+     *
+     * @return An {@link EventSeverity} constant is returned defining the severity
+     *         of this event.
+     */
     EventSeverity getSeverity();
 
+    /**
+     * This method returns a description of this event. It should describe the
+     * trigger of this event and what the cause is.
+     *
+     * @return A {@link String} containing the description is retuned.
+     */
     String getDescription();
 
+    /**
+     * This method returns a non-null {@link List} of actions which can be performed
+     * as reaction of this event.
+     *
+     * @return A {@link List} of {@link Action} is returned.
+     */
     List<Action> getActions();
 
 }

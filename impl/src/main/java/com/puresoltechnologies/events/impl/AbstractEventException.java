@@ -68,6 +68,11 @@ public abstract class AbstractEventException extends Exception implements EventE
 	this.event = event;
     }
 
+    /**
+     * This method returns the associated event.
+     *
+     * @return An {@link Event} is returned.
+     */
     public final Event getEvent() {
 	return event;
     }
