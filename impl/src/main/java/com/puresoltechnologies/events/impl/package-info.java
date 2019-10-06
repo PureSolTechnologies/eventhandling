@@ -5,4 +5,4 @@
  * some additional infrastructure code to support messages for logging, UI and
  * optional OCAPs (out-of-control action plans).
  */
-package com.puresoltechnologies.events;
+package com.puresoltechnologies.events.impl;

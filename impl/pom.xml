@@ -10,8 +10,7 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>events</artifactId>
-	<packaging>pom</packaging>
+	<artifactId>impl</artifactId>
 
 	<name>${officalName} - ${project.artifactId}</name>
 
@@ -21,8 +20,16 @@
 			<artifactId>domain</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.puresoltechnologies.events</groupId>
-			<artifactId>impl</artifactId>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-library</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
 		</dependency>
 	</dependencies>
 </project>

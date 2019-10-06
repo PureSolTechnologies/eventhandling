@@ -34,6 +34,8 @@
 	</developers>
 
 	<modules>
+		<module>domain</module>
+		<module>impl</module>
 		<module>events</module>
 		<module>testing</module>
 	</modules>
@@ -84,7 +86,17 @@
 			<!-- Self -->
 			<dependency>
 				<groupId>com.puresoltechnologies.events</groupId>
+				<artifactId>domain</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.puresoltechnologies.events</groupId>
 				<artifactId>events</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.puresoltechnologies.events</groupId>
+				<artifactId>impl</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!-- PureSol Technologies -->

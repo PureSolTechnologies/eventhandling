@@ -1,4 +1,4 @@
-package com.puresoltechnologies.events;
+package com.puresoltechnologies.events.domain;
 
 /**
  * This is the base interface for any event exception. Event exceptions carry an
@@ -8,8 +8,9 @@ package com.puresoltechnologies.events;
  * @author Rick-Rainer Ludwig
  *
  */
-public interface EventException {
+public interface EventException extends Event {
 
+    @Override
     String getEventCode();
 
     String getMessage();

@@ -1,4 +1,4 @@
-package com.puresoltechnologies.events;
+package com.puresoltechnologies.events.domain;
 
 public interface EventRuntimeException extends EventException {
 
